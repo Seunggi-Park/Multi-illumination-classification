@@ -32,9 +32,9 @@ class SimpleClassifier(nn.Module):
         x = F.relu(self.fc1(x))  # First fully connected layer with ReLU activation
         x = self.fc2(x)  # Output layer (logits)
         return x
-train_dataset = DR.CustomDatasetOver(root_dir='dataset2/train', transform=DR.transform2)
-valid_dataset = DR.CustomDataset(root_dir='dataset2/valid', transform=DR.transform2)
-test_dataset = DR.CustomDataset(root_dir='dataset2/test', transform=DR.transform2)
+train_dataset = DR.CustomDatasetOver(root_dir='dataset/train', transform=DR.transform2)
+valid_dataset = DR.CustomDataset(root_dir='dataset/valid', transform=DR.transform2)
+test_dataset = DR.CustomDataset(root_dir='dataset/test', transform=DR.transform2)
 
 #train_dataset2 = DR.CustomDatasetOver(root_dir='dataset/train', transform=DR.transform2)
 print(len(train_dataset))

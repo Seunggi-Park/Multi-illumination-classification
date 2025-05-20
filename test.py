@@ -19,7 +19,7 @@ def label_smoothing(labels, num_classes=5, smoothing=0.2):
     smooth_label.scatter_(1, labels.data.unsqueeze(1), confidence)
     return smooth_label
 
-
+#hi
 class SimpleClassifier(nn.Module):
     def __init__(self, num_classes=5):
         super(SimpleClassifier, self).__init__()
